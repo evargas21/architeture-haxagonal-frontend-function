@@ -1,7 +1,7 @@
-import { Course } from "./Course";
+import { ICourse } from "./Course";
 
 export interface ICourseRepository {
-	save: (course: Course) => Promise<void>;
-	get: (id: string) => Promise<Course | null>;
-	getAll: () => Promise<Course[]>;
+	save: (course: ICourse) => Promise<void>;
+	get: (id: string) => Promise<ICourse | null>;
+	getAll: () => Promise<ICourse[]>;
 }
