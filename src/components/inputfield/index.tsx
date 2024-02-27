@@ -1,7 +1,7 @@
-import React, { ChangeEventHandler } from "react";
+import React, {ChangeEventHandler, ReactElement} from "react";
 
 type InputFieldProps = {
-  Icon: any;
+  Icon: () => ReactElement;
   error: string | undefined;
   title: string;
   id: string | undefined;

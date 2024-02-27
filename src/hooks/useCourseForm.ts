@@ -1,4 +1,7 @@
+// @packages
 import { useState } from "react";
+
+// @scripts
 import { useCoursesContext } from "../CoursesContext";
 
 export const enum FormStatus {

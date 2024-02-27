@@ -1,11 +1,12 @@
+// @packages
 import React, { useContext, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+
+// @scripts
 import { ICourse } from "./modules/domain/Course";
 import { ICourseRepository } from "./modules/domain/ICourseRepository";
 import { createCourse } from "./modules/application/create/createCourse";
 import { getAllCourses } from "./modules/application/get-all/getAllCourses";
-
-
 
 export interface ContextState {
 	courses: ICourse[];

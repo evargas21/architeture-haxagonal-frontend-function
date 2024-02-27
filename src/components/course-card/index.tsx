@@ -1,4 +1,7 @@
+// @packages
 import clsx from "clsx";
+
+// @scripts
 import { ICourse } from "../../modules/domain/Course";
 
 export function CourseCard({ course }: { course: ICourse }) {

@@ -1,3 +1,4 @@
+// @scripts
 import { useCoursesContext } from "../../CoursesContext";
 import { CourseCard } from "../course-card";
 

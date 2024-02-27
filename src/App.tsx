@@ -1,7 +1,8 @@
+// @scripts
 import { CoursesContextProvider } from "./CoursesContext";
-import { createLocalStorageCourseRepository } from "./modules/infrastructure/LocalStorageCourseRepository";
 import { CoursesList } from "./components/courses-list";
 import { CreateCourseForm } from "./components/create-curse-form";
+import { createLocalStorageCourseRepository } from "./modules/infrastructure/LocalStorageCourseRepository";
 
 function App() {
   const repository = createLocalStorageCourseRepository();

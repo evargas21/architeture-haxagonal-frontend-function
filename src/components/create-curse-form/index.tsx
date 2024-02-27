@@ -1,19 +1,21 @@
+// @packages
 import React, { useEffect, useState } from "react";
+import { PaperClipIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 
-import { useCourseFormData } from "../../hooks/useCourseFormData";
-import { FormStatus, useCourseForm } from "../../hooks/useCourseForm";
+// @scripts
+import AlertError from "../error-notification";
+import AlertSuccess from "../success-notification";
+import InputField from "../inputfield";
+import Spinner from "../spinner";
 import {
   TITLE_MAX_LENGTH,
   TITLE_MIN_LENGTH,
   isCourseImageUrlValid,
   isCourseTitleValid,
 } from "../../modules/domain/CourseValidations";
-import Spinner from "../spinner";
-import InputField from "../inputfield";
-import { PaperClipIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 import { Button } from "../button";
-import AlertSuccess from "../success-notification";
-import AlertError from "../error-notification";
+import { FormStatus, useCourseForm } from "../../hooks/useCourseForm";
+import { useCourseFormData } from "../../hooks/useCourseFormData";
 
 const initialState = {
   title: "",
