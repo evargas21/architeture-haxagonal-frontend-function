@@ -1,5 +1,5 @@
-import { ICourse } from "../domain/Course";
-import { ICourseRepository } from "../domain/ICourseRepository";
+import { ICourse } from "../domain/Course.ts";
+import { ICourseRepository } from "../domain/ICourseRepository.ts";
 
 export function createLocalStorageCourseRepository(): ICourseRepository {
 	return {

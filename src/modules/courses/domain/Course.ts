@@ -5,7 +5,7 @@ import {
   isCourseTitleValid,
   CourseImageUrlNotValidError,
   isCourseImageUrlValid,
-} from "./CourseValidations";
+} from "./CourseValidations.ts";
 
 export interface ICourse {
   id: string;

@@ -2,7 +2,7 @@
 import { CoursesContextProvider } from "./CoursesContext";
 import { CoursesList } from "./components/courses-list";
 import { CreateCourseForm } from "./components/create-curse-form";
-import { createLocalStorageCourseRepository } from "./modules/infrastructure/LocalStorageCourseRepository";
+import { createLocalStorageCourseRepository } from "./modules/courses/infrastructure/LocalStorageCourseRepository";
 
 function App() {
   const repository = createLocalStorageCourseRepository();

@@ -12,7 +12,7 @@ import {
   TITLE_MIN_LENGTH,
   isCourseImageUrlValid,
   isCourseTitleValid,
-} from "../../modules/domain/CourseValidations";
+} from "../../modules/courses/domain/CourseValidations";
 import { Button } from "../button";
 import { FormStatus, useCourseForm } from "../../hooks/useCourseForm";
 import { useCourseFormData } from "../../hooks/useCourseFormData";
